@@ -1,0 +1,1368 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Vinska ponuda obuhvaća 99 hrvatskih i svjetskih vina, specijalnih vina, pjenušaca, šampanjaca, i vinskih destilata.
+   Osim vina naša ponudu čine i sjajan izbor koktela, piva, voćnih rakije, svježe cijeđenih sokova, kroasana, kolača i torti. ">
+    <meta name="keywords" content="wine bar, caffe bar, vino, kava, kolači, galerija">
+    <meta name="author" content="Wine bar Galerija">
+
+    <title>Caffe Wine bar Galerija</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+
+    <!-- <meta name="description" content="Sadržaj stranice"> -->
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <style>
+      .item img{
+          height:100%;
+          max-height:700px;
+      }
+  </style>
+ 
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+	var myCenter=new google.maps.LatLng(45.737099,16.002359);
+
+	function initialize()
+	{
+		var mapProp = {
+			center:myCenter,
+			zoom:16,
+			mapTypeId:google.maps.MapTypeId.ROADMAP,
+			scrollwheel: false,
+		};
+
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+		var marker=new google.maps.Marker({
+			position:myCenter,
+			icon:'img/markere.png',
+			animation:google.maps.Animation.BOUNCE
+		});
+
+		marker.setMap(map);
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</head>
+
+
+<body data-spy="scroll" data-target="#my-navbar">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="my-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href=""><img src="img/logo small.jpg" class="img-responsive" alt="logo caffe wine bar Galerija" id="logo"></a>
+            </div><!-- Navbar Header -->
+
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">O NAMA</a>
+                    <li><a href="#wineCard">VINA</a>
+                    <li><a href="#food">SLASTICE</a>
+                    <li><a href="#bestOffer">IZDVOJENA PONUDA</a>
+                    <li><a href="#gallery">GALERIJA</a>
+                    <li><a href="#contact">KONTAKT</a>
+                </ul>
+            </div>
+
+        </div> <!-- End Container -->
+    </nav> <!-- End Navbar -->
+    <!-- jumbotron -->
+    <div id="background">
+        <!--<img src="winebar_pic/pluto.jpg" class="img-responsive glavna" alt="Text of the image"> -->
+        <h1>Caffe Wine bar Galerija</h1>
+        <div id="main_pic">
+
+        </div>
+
+    </div> <!-- End Jumbotron -->
+    <!-- AboutUs -->
+    <div class="container" id="about">
+        <section>
+            <div class="page-header">
+            </div> <!-- End Page Header -->
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2>O nama</h2>
+                    <p>
+                        Caffe Wine bar Galerija započeo je s radom 2004. godine u zagrebačkom naselju Odra.
+                        Jedan je od prvih specijaliziranih barova takve vrste u Zagrebu.
+                    </p>
+
+                    <p>
+                        Caffe Wine bar Galerija plijeni toplinom prostora  stvarajući  ugodu svakom gostu.
+                        Vaš dolazak primijetiti će  ljubazno osoblje, koje će vam pomoći odabrati nešto iz naše bogate ponude.
+                    </p>
+
+                    <p>
+                        Vinska ponuda koncipirana je tako da zadovolji vaše potrebe za uživanjem u čaši vrhunskog vina.
+                        Ponuda obuhvaća 99 hrvatskih i svjetskih vina, specijalnih vina, pjenušaca, šampanjaca i vinskih destilata.
+                        Vinsku kartu i cjelukupnu ponudu Caffe–Wine bara Galerija osmislio je vlasnik, jedan od vodećih hrvatskih sommeliera Zvonimir Koprivnjak.
+                    </p>
+
+                    <p>
+                        Osim vina naša ponudu čine i sjajan izbor koktela, piva, voćnih rakije, svježe cijeđenih sokova, kroasana, kolača i torti.
+                        Prepoznatljivi smo i po velikom izboru kava i toplih čokolada spravljenih po vlastitoj recepturi.
+                    </p>
+
+                    <p>Naš moto je jasan, odnos prema gostu iskren zato nas gosti posjećuju iz svih dijelova Zagreba i okolice.</p>
+                </div>
+                <div class="col-sm-3">
+                    <img src="img/glass_wine.png" class="img-responsive clanak" alt="glass of wine">
+                </div>
+            </div> <!-- End Row -->
+            <div class="page-header">
+            </div> <!-- End Page Header -->
+        </section>
+    </div><!-- End AboutUs -->
+    <!-- jumbotron -->
+    <div>
+        <!-- <img src="Galerija/Champagne2.jpg" class="img-responsive" alt="Text of the image"> -->
+
+        <section>
+            <div class="carousel slide" data-ride="carousel">
+
+                <!-- SLIKE VINA -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/sampanjci.png" alt="champagne">
+                    </div>
+                    <div class="item">
+                        <img src="img/sampanjci2.png" alt="champagne">
+                    </div>
+                    <div class="item">
+                        <img src="img/vina_crna.png" alt="red wine">
+                    </div>
+                    <div class="item">
+                        <img src="img/vina_bijela.png" alt="white wine">
+                    </div>
+                </div><!-- end Carousel inner -->
+            
+            </div> <!-- End Carousel -->
+
+        </section>
+
+    </div> <!-- End Jumbotron -->
+    <!-- WineCard -->
+    <div class="container" id="wineCard">
+        <section>
+            <div class="page-header" id="faq">
+            </div> <!-- End Page Header -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Vinska karta</h2>
+                    <p>
+                        Vinska karta Caffe–Wine bara Galerija kincipirana je tako da zadovolji Vaše potrebe za uživanjem u čaši vrhunskih vina.
+                        Vinska karta sadrži 99 etiketa iz domaćih i svjetskih vinarija. Ponuda vina ažurira se tokom godine vodeći računa o godišnjem dobu.
+                        Podijeljena je na bijela vina, ružičasta vina, crvena vina, šampanjce i pjenušce.
+                    </p>
+                    <br />
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a class="accordion-toggle" href="#collapse-1" data-toggle="collapse" data-parent="#accordion">
+                                        Bijela vina
+                                    </a>
+                                </div> <!-- End panel title -->
+                            </div>
+                            <div id="collapse-1" class="panel-collapse collapse">
+                                <div class="panel-body">
+
+                                    <table class="tablica">
+                                        <tr>
+                                            <td><strong>GRAŠEVINA  Šafran 2013. Vinogorje Varaždin</strong></td>
+                                            <td class="cijena">75,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk. 12,6% vol. Nefiltrirano</td> </tr>
+
+                                        <tr>
+                                            <td><strong>GRAŠEVINA MITROVAC  Krauthaker 2013. Vinogorje Kutjevo</strong></td>
+                                            <td class="cijena">120,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk. 13,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>GRAŠEVINA  Gerstmajer 2012. Vinogorje Baranja</strong></td>
+                                            <td class="cijena">105,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno polusuho vino alk. 13,00% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>GRAŠEVINA TURKOVIĆ  PPK Kutjevo 2012. Vinogorje Kutjevo</strong></td>
+                                            <td class="cijena">120,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko polusuho vino alk. 13,7% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>GRAŠEVINA  Gerstmajer 2013. Vinogorje Baranja</strong></td>
+                                            <td class="cijena">135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko slatko vino alk. 12,8% vol. Kasna berba</td> </tr>
+
+                                        <tr>
+                                            <td><strong>KRALJEVINA  Puhelek-Purek 2014. Vinogorje Zelina</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk. 11,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>ŠKRLET  Trdenić 2014. Vinogorje Moslavina</strong></td>
+                                            <td class="cijena">75,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>ZELENAC  Krauthaker 2013. Vinogorje Kutjevo</strong></td>
+                                            <td class="cijena">135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.13,0% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>SILVANAC ZELENI  Nespeš 2013. Vinogorje Zelina</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12,0% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>RIZLING RAJNSKI  Šafran 2013. Vinogorje Varaždin</strong></td>
+                                            <td class="cijena">75,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12,0% vol. Nefiltrirano</td> </tr>
+
+                                        <tr>
+                                            <td><strong>RIZLING RAJNSKI  Dr Losen 2012. Mosel Njemačka</strong></td>
+                                            <td class="cijena">120,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12,0% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>RIZLING RAJNSKI  Gerstmajer 2013. Vinogorje Baranja</strong></td>
+                                            <td class="cijena">135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko poluslatko vino alk.14,4% vol. Kasna berba</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MANZONI  Šafran 2013. Vinogorje Varaždin</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12,7% vol. Nefiltrirano</td> </tr>
+
+                                        <tr>
+                                            <td><strong>PINOT BIJELI  Jarec 2013. Vinogorje Zelina</strong></td>
+                                            <td class="cijena">105,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.13,0% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>PINOT SIVI  Šafran 2013. Vinogorje Varaždin</strong></td>
+                                            <td class="cijena">75,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12,5% vol. Nefiltrirano</td> </tr>
+
+                                        <tr>
+                                            <td><strong>PINOT GRIGIO  Monte Zovo 2013. Gorizia Italija</strong></td>
+                                            <td class="cijena">105,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>SAUVIGNON  SALTWATER  Iurs 2013. Vinogorje Erdut</strong></td>
+                                            <td class="cijena">105,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12,7% vol. </td> </tr>
+
+                                        <tr>
+                                            <td><strong>SAUVIGNON  Šafran 2013. Vinogorje Varaždin</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,4% vol. Nefiltrirano</td> </tr>
+
+                                        <tr>
+                                            <td><strong>SAUVIGNON  Daruvar 2013. Vinogorje Daruvar</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>SAUVIGNON  Žigrović 2013. Vinogorje Zelina</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko polusuho suho vino alk.12,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>SAUVIGNON  Monte Zovo 2013. Veneto Italija</strong></td>
+                                            <td class="cijena">135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>SAUVIGNON  Movia 2012. Goriška Brda Slovenija</strong></td>
+                                            <td class="cijena">135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.13,3% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MUŠKATNI SILVANAC  Iuris 2012. Vinogorje Erdut</strong></td>
+                                            <td class="cijena">105,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>CHARDONAY  Solum 2012. Vinogorje Međimurje</strong></td>
+                                            <td class="cijena">120,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12,8% vol. Sur Lie </td> </tr>
+
+                                        <tr>
+                                            <td><strong>CHARDONAY  Gerstmajer 2011. Vinogorje Baranja</strong></td>
+                                            <td class="cijena">105,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno polusuho vino alk.15,0% vol. </td> </tr>
+
+                                        <tr>
+                                            <td><strong>CHABLIS  Christian Moreau 2012. Burgundija Francuska </strong></td>
+                                            <td class="cijena">165,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.12,5% vol. Chardonay</td> </tr>
+
+                                        <tr>
+                                            <td><strong>SEMILLION-CHARDONAY  Rawsons Retreat 2012. Australija </strong></td>
+                                            <td class="cijena">105,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno polusuho vino alk.12,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MALVAZIJA  Paljuh 2014. Vinogorje centralna Istra </strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,0% vol. Nefiltrirano </td> </tr>
+
+                                        <tr>
+                                            <td><strong>MALVAZIJA  Coronica 2013. Vinogorje zapadna Istra</strong></td>
+                                            <td class="cijena">120,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,0% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>POŠIP  PZ Čara 2013. Vinogorje Korčula</strong></td>
+                                            <td class="cijena">120,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.13,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>POŠIP MARCO POLO  PZ Čara 2012. Vinogorje Korčula</strong></td>
+                                            <td class="cijena">120,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.14,3% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>ŽILAVKA  Nuić 2013. Vinogorje Mostar BiH</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12,5% vol. žilavka, bena, krkošija</td> </tr>
+
+                                        <tr>
+                                            <td><strong>ŽILAVKA  Stojić 2013. Vinogorje Mostar BiH</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.13,0% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MOUTON CADET   Rotschild 2013. Bordoux Francuska</strong></td>
+                                            <td class="cijena">135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12,0% vol. semillon,chardonay,sauvignon</td> </tr>
+
+                                        <tr>
+                                            <td><strong>TRAMINAC  Šafran 2013. Vinogorje Varaždin</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,1% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>TRAMINAC PRINCIPOVAC  Iločki podrumi 2008. Vinogorje Srijem</strong></td>
+                                            <td class="cijena">165,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko poluslatko vino alk.14,4% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>TRAMINAC  MIRISAVI  Šafran 2009. Vinogorje Varaždin</strong></td>
+                                            <td class="cijena">(0,375l)112,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko poluslatko vino alk.13,1% vol.  Izborna berba bobica</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MUŠKAT ŽUTI  Šafran 2013.Vinogorje Varaždin</strong></td>
+                                            <td class="cijena">105,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno poluslatko vino alk.12,8% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MIA BLANCO  Freixenet 2012. Castilla Španjolska</strong></td>
+                                            <td class="cijena">105,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno poluslatko vino alk.11,5% vol. muškat, macabeo, xarello</td> </tr>
+
+                                    </table>
+                                </div>
+                            </div><!-- End Panel collapse -->
+
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a class="accordion-toggle" href="#collapse-2" data-toggle="collapse" data-parent="#accordion">
+                                        Ružičasta vina
+                                    </a>
+                                </div> <!-- End panel title -->
+                            </div>
+                            <div id="collapse-2" class="panel-collapse collapse">
+                                <div class="panel-body">
+
+                                    <table class="tablica">
+                                        <tr>
+                                            <td><strong>ROSALIA  Iuris 2014. Vinogorje Erdut</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.11,5% vol.</td> </tr>
+                                        <tr> <td>Cabernet sauvignon, pinot crni</td> </tr>
+
+                                        <tr>
+                                            <td><strong>ROSE  Galić 2014. Vinogorje Kutjevo</strong></td>
+                                            <td class="cijena">105,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12,0% vol.</td> </tr>
+                                        <tr> <td>Cabernet sauvignon, merlot, pinot crni</td> </tr>
+
+                                        <tr>
+                                            <td><strong>ROSALIA FRESH  Iuris 2014. Vinogorje Erdut</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno poluslatko vino alk.11,5% vol. pinot crni</td> </tr>
+
+                                        <tr>
+                                            <td><strong>ROSE  Josić 2014. Vinogorje Baranja</strong></td>
+                                            <td class="cijena">105,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno slatko vino alk.9,5% vol.</td> </tr>
+                                        <tr> <td>Cabernet sauvignon, merlot, syrah</td> </tr>
+
+                                        <tr>
+                                            <td><strong>LA VIELLE FERME  Recolte 2014. Luberon Francuska</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,0% vol.  </td> </tr>
+                                        <tr> <td>Cinsault, syrah, grenache</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MOUTON CADET   Rotschild 2013. Bordoux Francuska</strong></td>
+                                            <td class="cijena">135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,0% vol.</td> </tr>
+                                        <tr> <td>Merlot, cabernet sauvignon, cabernet franc</td> </tr>
+
+                                        <tr>
+                                            <td><strong>DAMSKI ROSE  Erzetič 2013. Goriška Brda Slovenija</strong></td>
+                                            <td class="cijena">135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno polusuho vino alk.12,5% vol. merlot</td> </tr>
+
+                                    </table>
+
+                                </div>
+                            </div><!-- End Panel collapse -->
+
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a class="accordion-toggle" href="#collapse-3" data-toggle="collapse" data-parent="#accordion">
+                                        Crvena vina
+                                    </a>
+                                </div> <!-- End panel title -->
+                            </div>
+                            <div id="collapse-3" class="panel-collapse collapse  ">
+                                <div class="panel-body">
+
+                                    <table class="tablica">
+                                        <tr>
+                                            <td><strong>TERAN  Paljuh 2012. Vinogorje centralna Istra</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12,4% vol. Nefiltrirano</td> </tr>
+
+                                        <tr>
+                                            <td><strong>ZWEIGELT  Adžić 2013. Vinogorje Kutjevo - Magnum 1,50l</strong></td>
+                                            <td class="cijena">210,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino 13,7% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>FRANKOVKA MIRAZ  Feravino 2009. Vinogorje Feričanci</strong></td>
+                                            <td class="cijena">105,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.13,7% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>PINOT CRNI  Iuris 20129-. Vinogorje Erdut</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12,2% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>PINOT CRNI MIRAZ  Feravino 2012. Vinogorje Feričanci</strong></td>
+                                            <td class="cijena">150,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.14,6% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MODRI PINOT  Movia 2008. Goriška Brda Slovenija</strong></td>
+                                            <td class="cijena">180,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.13,0% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MERLOT  Iuris 2012. Vinogorje Erdut</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MERLOT  Menegetti 2013. Vinogorje zapadna Istra</strong></td>
+                                            <td class="cijena">135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MERLOT  Belje 2011.Vinogorje Baranja</strong></td>
+                                            <td class="cijena">135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.14,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MERLOT BUTIQUE KORLAT  Benkovac 2011. Vinogorje Stankovci </strong></td>
+                                            <td class="cijena">150,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko poluslatko vino alk.14,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MERLOT  Bogro Magredo 2011. Friuli Italija </strong></td>
+                                            <td class="cijena">120,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MERLOT  Beringer 2011. Napa Valley Kalifornija SAD</strong></td>
+                                            <td class="cijena">150,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>CABERNET SAUVIGNON  Solum 2013. Vinogorje Slavonski Brod </strong></td>
+                                            <td class="cijena">135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,0% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>CABERNET SAUVIGNON  Ciban 2010. Vinogorje Plešivica-Okić</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,4% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>CABERNET SAUVIGNON SALTWATER  Iuris 2013. Vinogorje Erdut</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>CABERNET SAUVIGNON  Belje 2011. Vinogorje Baranja</strong></td>
+                                            <td class="cijena">135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.14,2% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>CABERNET SAUVIGNON GOLDBERG Belje 2007. Vinogorje Baranja</strong></td>
+                                            <td class="cijena">180,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.14,1% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>CABERNET SAUVIGNON-MERLOT Iuris 2012.Vinogorje Erdut</strong></td>
+                                            <td class="cijena">75,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno polusuho vino alk.13,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>CABERNET SAUVIGNON-MERLOT Silver Tongue 2012. Pannon Mađarska</strong></td>
+                                            <td class="cijena">105,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.12,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>BABIĆ  Gracin 2007. Vinogorje Primošten</strong></td>
+                                            <td class="cijena">180,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.14,0% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>PLAVAC JENARO  Iuris 2009. Vinogorje Brač</strong></td>
+                                            <td class="cijena">120,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.13,9% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>PLAVAC MURVICA  Baković 2009. Vinogorje Brač </strong></td>
+                                            <td class="cijena">165,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.15,0% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>CRLJENAK KAIROS  Grabovac 2010. Vinogorje Imotski</strong></td>
+                                            <td class="cijena">165,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.15,4% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>ZINFANDEL  Beringer 2012. Napa Valley Kalifornija SAD</strong></td>
+                                            <td class="cijena">135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno polusuho vino alk.14,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>SYRAH KORLAT  Benkovac 2010. Vinogorje Benkovac-Stankovci</strong></td>
+                                            <td class="cijena">150,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.14,0% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>SHIRAZ  PZ Maslina i vino 2012. Vinogorje Benkovac-Stankovci </strong></td>
+                                            <td class="cijena">120,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko polusuho vino alk.14,3% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>SYRAH RESERVA  Lacelia 2010. Uco Vally Mendoza Argentina</strong></td>
+                                            <td class="cijena">135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.14,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>SHIRAZ FOTBOLT  D'Arenberg 2011. McLaren Vally Australija</strong></td>
+                                            <td class="cijena">165,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.14,2% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MALBEC TERRAZAS  Bodegas Chandon 2011. Mendoza Argentina</strong></td>
+                                            <td class="cijena">180,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.14,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MODRO JEZERO  Grabovac 2013. Vinogorje Imotski </strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,0% vol. </td> </tr>
+                                        <tr> <td>Merlot, vranac, trnjak</td> </tr>
+
+                                        <tr>
+                                            <td><strong>RISERVA 6  Bibich 2013. Vinogorje Skradin-Plastovo</strong></td>
+                                            <td class="cijena">135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,0% vol. Barrique  </td> </tr>
+                                        <tr> <td>Babić, plavina, lasina</td> </tr>
+
+                                        <tr>
+                                            <td><strong>CUVE JAKOB  Jakobović 2011. Vinogorje Slavonski Brod</strong></td>
+                                            <td class="cijena">150,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.14,8% vol.</td> </tr>
+                                        <tr> <td>Cabernet sauvignon, cabernet franc, merlot, syrah</td> </tr>
+
+                                        <tr>
+                                            <td><strong>CUVE No 1  Pinkert 2012. Vinogorje Baranja</strong></td>
+                                            <td class="cijena">105,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno polusuho vino alk.12,9% vol.</td> </tr>
+                                        <tr> <td>Cabernet sauvignon, merlot, frankovka</td> </tr>
+
+                                        <tr>
+                                            <td><strong>FESTIGIA CASTELLO  Vina Laguna 2011. Vinogorje zapadna Istra </strong></td>
+                                            <td class="cijena">120,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.13,7% vol.</td> </tr>
+                                        <tr> <td>Merlot, teran, cabernet sauvignon</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MODRO JEZERO GRAND RESERVE  Grabovac 2010. Vinogorje Imotski </strong></td>
+                                            <td class="cijena">165,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.15,00% vol.</td> </tr>
+                                        <tr> <td>Cabernet sauvignon, plavac mali, merlot</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MUŠKAT RUŽA  Vina Laguna 2013. Vinogorje zapadna Istra - 0,50l</strong></td>
+                                            <td class="cijena">80,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno slatko vino alk.12,5% vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>BLATINA  Nuić 2013. Vinogorje Mostar BiH</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,0% vol.</td> </tr>
+                                        <tr> <td>Blatina, alicante, bouschet</td> </tr>
+
+                                        <tr>
+                                            <td><strong>BLATINA  Stojić 2011. Vinogorje Mostar BiH</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Vrhunsko suho vino alk.13,0%  vol.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>PAIARA  Marchesi Antinori 2012. Puglia Italija</strong></td>
+                                            <td class="cijena">90,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,5% vol.  primitivo, cabernet s.</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MOUTON CADET   Rotschild 2012. Bordoux Francuska</strong></td>
+                                            <td class="cijena">135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,5% vol.</td> </tr>
+                                        <tr> <td>Merlot, cabernet sauvignon, cabernet franc</td> </tr>
+
+                                        <tr>
+                                            <td><strong>TACUN CARMANERE  Casa 2009. Valle Central Santiago Čile</strong></td>
+                                            <td class="cijena">105,00 kn</td>
+                                        </tr>
+                                        <tr> <td>Kvalitetno suho vino alk.13,5% vol.</td> </tr>
+
+                                    </table>
+
+
+                                </div>
+                            </div><!-- End Panel collapse -->
+
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a class="accordion-toggle" href="#collapse-4" data-toggle="collapse" data-parent="#accordion">
+                                        Šampanjci
+                                    </a>
+                                </div> <!-- End panel title -->
+                            </div>
+                            <div id="collapse-4" class="panel-collapse collapse  ">
+                                <div class="panel-body">
+                                    <table class="tablica">
+                                        <tr>
+                                            <td><strong>CHAMPAGNE DOM PERIGNON Vintage 1999.  Moet&Chandon - Brut</strong></td>
+                                            <td class="cijena">(0,75 l) 1690,00 kn</td>
+                                        </tr>
+                                        <tr> <td>26% chardonay, 37% pinot noir, 37% pinot meunier</td> </tr>
+
+                                        <tr>
+                                            <td><strong>CHAMPAGNE BRUT PREMIER  Louis Roederer Reims</strong></td>
+                                            <td class="cijena">(0,75 l) 490,00 kn</td>
+                                        </tr>
+                                        <tr> <td>34% chardonay, 66% pinot noir</td> </tr>
+
+                                        <tr>
+                                            <td><strong>CHAMPAGNE DELAMOTTE  Le Mensil-sur-Oger - Brut</strong></td>
+                                            <td class="cijena">(0,375 l) 250,00 kn</td>
+                                        </tr>
+                                        <tr> <td>50% chardonay, 30% pinot noir, 20% pinot meunier</td> </tr>
+
+                                    </table>
+
+                                </div>
+                            </div><!-- End Panel collapse -->
+
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a class="accordion-toggle" href="#collapse-5" data-toggle="collapse" data-parent="#accordion">
+                                        Pjenušci
+                                    </a>
+                                </div> <!-- End panel title -->
+                            </div>
+                            <div id="collapse-5" class="panel-collapse collapse  ">
+                                <div class="panel-body">
+                                    <table class="tablica">
+                                        <tr>
+                                            <td><strong>KRALJICA  Puhelek-Purek - Extra Brut</strong></td>
+                                            <td class="cijena">(0,75 l) 150,00 kn</td>
+                                        </tr>
+                                        <tr> <td>100% kraljevina</td> </tr>
+
+                                        <tr>
+                                            <td><strong>MILLENIUM  Tomac - Brut</strong></td>
+                                            <td class="cijena">(0,75 l) 150,00 kn</td>
+                                        </tr>
+                                        <tr> <td>40% chardonay, 25% pinot crni, 35% žuti plovec</td> </tr>
+
+                                        <tr>
+                                            <td><strong>V G P  Grabovac - Brut</strong></td>
+                                            <td class="cijena">(0,75 l) 150,00 kn</td>
+                                        </tr>
+                                        <tr> <td>50% chardonay, 50% pinot sivi</td> </tr>
+
+                                        <tr>
+                                            <td><strong>ROSE  Tomac - Brut</strong></td>
+                                            <td class="cijena">(0,75 l) 150,00 kn</td>
+                                        </tr>
+                                        <tr> <td>100% pinot crni</td> </tr>
+
+                                        <tr>
+                                            <td><strong>V G P  ROSE  Grabovac - Extra Sec</strong></td>
+                                            <td class="cijena">(0,75 l) 150,00 kn</td>
+                                        </tr>
+                                        <tr> <td>37% merlot, 37% vranac, 26% trnjak</td> </tr>
+
+                                        <tr>
+                                            <td><strong>CARTA NEVADA  Freixenete - Demi Sec</strong></td>
+                                            <td class="cijena">(0,75 l) 135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>45% macabeo, 35% xarello, 20% parellada</td> </tr>
+
+                                        <tr>
+                                            <td><strong>PROSECCO  Cantina Collieugeani DOC - Brut</strong></td>
+                                            <td class="cijena">(0,75 l) 135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>100% prosecco</td> </tr>
+
+                                        <tr>
+                                            <td><strong>PROSECCO  Tenuta Santa Anna DOC - Brut</strong></td>
+                                            <td class="cijena">(0,75 l) 135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>100% prosecco</td> </tr>
+
+                                        <tr>
+                                            <td><strong>FIOR D'ARANCIO  Cantina Collieugeani  DOCG - Doux</strong></td>
+                                            <td class="cijena">(0,75 l) 135,00 kn</td>
+                                        </tr>
+                                        <tr> <td>100% muscato</td> </tr>
+
+                                    </table>
+
+                                </div>
+                            </div><!-- End Panel collapse -->
+                        </div>
+                    </div><!-- End panel group -->
+                </div>
+            </div>
+
+            <div class="page-header">
+            </div> <!-- End Page Header -->
+        </section>
+    </div><!-- End WineCard -->
+    <!-- jumbotron -->
+    <div>
+        <section>
+            <div class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/kava1.png" alt="caffe">
+                    </div>
+                    <div class="item">
+                        <img src="img/kava4.png" alt="caffe">
+                    </div>
+                    <div class="item">
+                        <img src="img/kava3.png" alt="caffe">
+                    </div>
+                    <div class="item">
+                        <img src="img/kava2.png" alt="caffe">
+                    </div>
+                </div><!-- end Carousel inner -->
+
+            </div> <!-- End Carousel -->
+
+        </section>
+
+    </div> <!-- End Jumbotron -->
+    <!-- Food -->
+    <div class="container" id="food">
+        <section>
+            <div class="page-header">
+            </div> <!-- End Page Header -->
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="img/kolac.png" class="img-responsive clanak" alt="cake">
+                </div>
+                <div class="col-sm-9">
+                    <h2>Ponuda slastica</h2>
+                    <p>
+                        Kod nas možete probati torte i kolače napravljene bez dodanih aditiva, bojila i aroma.
+                        Kolači su proizvedeni u slastičarnici „Tri užitka“. Naše kolače možete ponijeti sa sobom u praktičnoj ambalaži.
+                    </p>
+                    <p>
+                        Ujutro poslužujemo svježe pečene kroasane i štrukle od sira i jabuka.
+                    </p>
+                </div>
+            </div> <!-- End Row -->
+            <div class="page-header">
+            </div> <!-- End Page Header -->
+        </section>
+    </div><!-- End Food -->
+    <!-- jumbotron -->
+    <div>
+        <section>
+            <div class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/cheesecake.jpg" alt="cheesecake">
+                    </div>
+                    <div class="item">
+                        <img src="img/kolaci.jpg" alt="cake">
+                    </div>
+                    <div class="item">
+                        <img src="img/ledeni.jpg" alt="cake">
+                    </div>
+                    <div class="item">
+                        <img src="img/strukli.jpg" alt="strukle">
+                    </div>
+                </div><!-- end Carousel inner -->
+
+            </div> <!-- End Carousel -->
+
+        </section>
+
+    </div> <!-- End Jumbotron -->
+    <!-- Special offer -->
+
+    <div class="container" id="bestOffer">
+        <section>
+            <div class="page-header">
+            </div> <!-- End Page Header -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Izdvojena ponuda</h2> <br />
+                    <div class="col-sm-6 col-md-6">
+                        <div class="thumbnail">
+                            <!-- <img src="img/2.jpg" alt="..."> -->
+
+                            <div class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="img/2.jpg" alt="hot chocolate">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/kava3.png" alt="hot chocolate">
+                                    </div>
+                                </div><!-- end Carousel inner -->
+
+                            </div> <!-- End Carousel -->
+
+                            <div class="caption">
+                                <h3>Tople čokolade</h3>
+
+                                <table class="tablica">
+                                    <tr>
+                                        <td><strong>Harmonie Chocolate</strong></td>
+                                        <td class="cijena">17,00 kn</td>
+                                    </tr>
+                                    <tr> <td>(bijela čokolada, kava, šlag)</td> </tr>
+
+                                    <tr>
+                                        <td><strong>Noissete Chocolate</strong></td>
+                                        <td class="cijena">18,00 kn</td>
+                                    </tr>
+                                    <tr> <td>(tamna čoklada, eko lješnjaci, šlag)</td> </tr>
+
+                                    <tr>
+                                        <td><strong>Boquet dOrange Chocolate</strong></td>
+                                        <td class="cijena">19,00 kn</td>
+                                    </tr>
+                                    <tr> <td>(tamna čokolada, grand marnier, šlag)</td> </tr>
+
+                                    <tr>
+                                        <td><strong>Monn Cherry Chocolate</strong></td>
+                                        <td class="cijena">18,00 kn</td>
+                                    </tr>
+                                    <tr> <td>(tamna ili bijela čokolada, eko višnje, šlag)</td> </tr>
+
+                                    <tr>
+                                        <td><strong>Cherry & Chili Chocolate</strong></td>
+                                        <td class="cijena">17,00 kn</td>
+                                    </tr>
+                                    <tr> <td>(tamna čokolada, eko višnje, chili, šlag)</td> </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="thumbnail">
+                            <div class="carousel slide" data-ride="carousel">
+
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="img/1.jpg" alt="caffe">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/4a.jpg" alt="caffe">
+                                    </div>
+                                </div><!-- end Carousel inner -->
+
+                            </div> <!-- End Carousel -->
+                            <!-- <img src="img/4a.jpg" alt="..."> -->
+                            <div class="caption">
+                                <h3>Kave</h3>
+
+                                <table class="tablica">
+                                    <tr>
+                                        <td><strong>Kava Galerija</strong></td>
+                                        <td class="cijena">15,00 kn</td>
+                                    </tr>
+                                    <tr> <td>(kava, amaretto, mlijeko, šlag)</td> </tr>
+
+                                    <tr>
+                                        <td><strong>Latte Macchiato</strong></td>
+                                        <td class="cijena">14,00 kn</td>
+                                    </tr>
+                                    <tr> <td>(kava, liker od kave, krema od mlijeka)</td> </tr>
+
+                                    <tr>
+                                        <td><strong>Tiramisu Cappuccino</strong></td>
+                                        <td class="cijena">16,00 kn</td>
+                                    </tr>
+                                    <tr> <td>(kava, čokolada, kakao, badem, amaretto, mlijeko, šlag)</td> </tr>
+
+                                    <tr>
+                                        <td><strong>Toblerone Caffe</strong></td>
+                                        <td class="cijena">16,00 kn</td>
+                                    </tr>
+                                    <tr> <td>(kava, karamela,eko lješnjak,mlijeko, šlag)</td> </tr>
+
+                                    <tr>
+                                        <td><strong>Irish Caffe</strong></td>
+                                        <td class="cijena">25,00 kn</td>
+                                    </tr>
+                                    <tr> <td>(kava, irish whisky, tekuća šlag krema)</td> </tr>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="thumbnail">
+                            <!-- <img src="img/vino_casa.png" alt="..."> -->
+
+                            <div class="carousel slide" data-ride="carousel">
+
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="img/vina_bijela.png" alt="white wine">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/vina_bijela2.png" alt="white wine">
+                                    </div>
+                                </div><!-- end Carousel inner -->
+
+                            </div> <!-- End Carousel -->
+
+                            <div class="caption">
+                                <h3>Bijela vina</h3>
+
+                                <table class="tablica">
+                                    <tr>
+                                        <td><strong>PINOT GRIGIO  Monte Zovo 2013. Italija</strong></td>
+                                        <td class="cijena">14,00 kn</td>
+                                    </tr>
+                                    <tr> <td>Suho vino</td> </tr>
+
+                                    <tr>
+                                        <td><strong>SAUVIGNON  SALTWATER  Iuris 2013. Hrvatska</strong></td>
+                                        <td class="cijena">14,00 kn</td>
+                                    </tr>
+                                    <tr> <td>Suho vino</td> </tr>
+
+                                    <tr>
+                                        <td><strong>CHABLIS  Christian Moreau 2012. Francuska</strong></td>
+                                        <td class="cijena">22,00 kn</td>
+                                    </tr>
+                                    <tr> <td>Suho vino</td> </tr>
+
+                                    <tr>
+                                        <td><strong>MUŠKAT ŽUTI  Šafran 2013. Hrvatska</strong></td>
+                                        <td class="cijena">14,00 kn</td>
+                                    </tr>
+                                    <tr> <td>Poluslatko vino</td> </tr>
+
+                                    <tr>
+                                        <td><strong>GRAŠEVINA  Gerstmajer 2013. Hrvatska</strong></td>
+                                        <td class="cijena">18,00 kn</td>
+                                    </tr>
+                                    <tr> <td>Slatko vino, Kasna berba</td> </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="thumbnail">
+                            <!-- <img src="img/vino_casa.png" alt="..."> -->
+
+                            <div class="carousel slide" data-ride="carousel">
+
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="img/vina_crna2.png" alt="red wine">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/vino_casa.png" alt="glass of red wine">
+                                    </div>
+                                </div><!-- end Carousel inner -->
+
+                            </div> <!-- End Carousel -->
+
+                            <div class="caption">
+                                <h3>Crna vina</h3>
+
+                                <table class="tablica">
+                                    <tr>
+                                        <td><strong>TERAN  Paljuh 2012. Hrvatska</strong></td>
+                                        <td class="cijena">12,00 kn</td>
+                                    </tr>
+                                    <tr> <td>Suho vino</td> </tr>
+
+                                    <tr>
+                                        <td><strong>CRLJENAK KAIROS  Grabovac 2010. Hrvatska</strong></td>
+                                        <td class="cijena">22,00 kn</td>
+                                    </tr>
+                                    <tr> <td>Suho vino</td> </tr>
+
+                                    <tr>
+                                        <td><strong>MALBEC TERRAZAS  Bodegas Chandon 2011. Argentina</strong></td>
+                                        <td class="cijena">24,00 kn</td>
+                                    </tr>
+                                    <tr> <td>Suho vino</td> </tr>
+
+                                    <tr>
+                                        <td><strong>ZINFANDEL  Beringer 2012. SAD</strong></td>
+                                        <td class="cijena">18,00 kn</td>
+                                    </tr>
+                                    <tr> <td>Polusuho vino</td> </tr>
+
+                                    <tr>
+                                        <td><strong>MERLOT BUTIQUE KORLAT  Benkovac 2011. Hrvatska</strong></td>
+                                        <td class="cijena">20,00 kn</td>
+                                    </tr>
+                                    <tr> <td>Poluslatko vino</td> </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="container">
+        <div class="page-header">
+        </div> <!-- End Page Header -->
+    </div>
+    <!-- End Special offer -->
+    <!-- Gallery -->
+    <div id="gallery">
+        <section>
+            <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#screenshot-carousel" data-slide-to="1"></li>
+                    <li data-target="#screenshot-carousel" data-slide-to="2"></li>
+                    <li data-target="#screenshot-carousel" data-slide-to="3"></li>
+
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/galerija.png" alt="CaffeWineBarGalerija">
+                        <!-- <div class="carousel-caption">
+                            <h3>River</h3>
+                            <p>This is the caption</p>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <img src="img/interijer.png" alt="Interijer Galerija">
+                        <!-- <div class="carousel-caption">
+                            <h3>Highway</h3>
+                            <p>This is the caption</p>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <img src="img/terasa.png" alt="Terasa Galerija">
+                        <!-- <div class="carousel-caption">
+                            <h3>Street</h3>
+                            <p>This is the caption</p>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <img src="img/cjenik.png" alt="Pricelist">
+                        <!-- <div class="carousel-caption">
+                            <h3>Highway</h3>
+                            <p>This is the caption</p>
+                        </div> -->
+                    </div>
+                </div><!-- end Carousel inner -->
+                <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div> <!-- End Carousel -->
+
+        </section>
+    </div><!-- End Gallery -->
+    <!-- Contact -->
+
+    <div class="container" id="contact">
+        <section>
+            <div class="page-header">
+            </div> <!-- End Page Header -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Kontakt</h2>
+                    <div class="col-lg-4">
+                        <p>Pošaljite nam poruku ili nas potražite na navedenoj adresi.</p>
+
+                        <address>
+                            <strong>Wine bar Galerija</strong><br>
+                            Velika cesta 72 <br>
+                            10020 Odra<br>
+                            winebargalerija@gmail.com<br>
+                            +385 1 6231 634
+                        </address>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <form action="form.php" class="form-horizontal" role="form" method="post" id="form">
+                            <div class="form-group">
+                                <label for="user-name" class="col-lg-2 control-label">Ime</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="user-name" name="user-name" placeholder="Unesite ime">
+                                </div>
+                            </div><!-- End form group -->
+                            <div class="form-group">
+                                <label for="user-email" class="col-lg-2 control-label">Email</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="user-email" name="email" placeholder="Unesite email">
+                                </div>
+                            </div><!-- End form group -->
+
+                            <div class="form-group">
+                                <label for="user-message" class="col-lg-2 control-label">Poruka</label>
+                                <div class="col-lg-10">
+                                    <textarea name="message" id="user-message" class="form-control" cols="20" rows="10" placeholder="Unesite poruku"></textarea>
+                                </div>
+                            </div><!-- End form group -->
+
+                            <div class="form-group">
+                                <div class="col-lg-10 col-lg-offset-2">
+                                    <input type="submit" name="submit" class="button btn" value="Pošalji"></input>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="page-header">
+            </div> <!-- End Page Header -->
+
+        </section>
+
+    </div><!-- End Contact -->
+    <!-- Google Maps -->
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2784.700591992257!2d16.002359!3d45.737099!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47667f794edae271%3A0x90ca16ba9950398d!2sCaffe+Wine+Bar+Galerija!5e0!3m2!1shr!2shr!4v1425585922911" width="100%" height="450" frameborder="0" style="border:0"></iframe> -->
+    <div id="googleMap" style="width:100%;height:500px;"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" style="padding-top:30px;">
+            <ul class="list-inline">
+                <li><a href="https://www.facebook.com/CaffeWineBarGalerija" target="new"><img src="img/facebook-logoe.png" class="img-responsive" alt="facebook logo"></a></li>
+                <!-- <li><a href="https://plus.google.com/" target="new"><img src="winebar_pic/googlee.png" class="img-responsive" alt="google plus"></a></li> -->
+                <li><p>Galerija &copy; Copyright 2015 | "UGOSTITELJSKI OBRT", vl. Zvonimir Koprivnjak, Zagreb, Velika cesta 82, oznaka: 21011204286</p></li>
+            </ul>
+        </div> <!-- end Container -->
+    </footer><!-- End Footer -->
+
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="jquery.smoothscroll.min.js"></script>
+
+    <script>
+	$(document).on('click','.navbar-collapse.in',function(e) {
+		if( $(e.target).is('a') ) {
+			$(this).collapse('hide');
+		}
+	});
+
+    </script>
+    <script>
+	 $("#getCodeModal").modal('hide');
+$(document).on('submit', '#form', function(e) {
+
+     $.ajax({
+        url: $(this).attr('action'),
+        type: $(this).attr('method'),
+        data: $(this).serialize(),
+        success: function(html) {
+        alert('poruka uspješno poslana');
+        }
+    });
+    e.preventDefault();
+});
+    </script>
+
+    <script>
+	 $('.carousel').carousel({
+  interval: 1000 * 3
+	});
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $("a").on("click", function (event) {
+                
+                var from = $('html,body');
+                var to = $('#wineCard');
+
+                from.animate({
+                    scrollTop: to.offset().top - from.offset().top + from.scrollTop()
+                }, 1);
+
+            });
+        });
+        </script>
+</body>
+</html>

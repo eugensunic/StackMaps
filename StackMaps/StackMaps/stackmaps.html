@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Maps</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="css/mapstyle.css" rel="stylesheet">
+    <script>
+        var index0 = 0;
+        var index1 = 0;
+
+        function initMap() {
+            index0 = 4;
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 45.327, lng: 14.44 },
+                zoom: 5
+            });
+            map.setZoom(index0);
+            map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+            $(".type").eq(0).css("background-color", "orange");
+            $(".cr").eq(4).css("background-color", "orange");
+            google.maps.event.addListener(map, 'mousemove', function (event) {
+                displayCoordinates(event.latLng);
+            });
+
+        }
+        function displayCoordinates(pnt) {
+
+            var lat = pnt.lat();
+            lat = lat.toFixed(4);
+            var lng = pnt.lng();
+            lng = lng.toFixed(4);
+            document.getElementById("latvalue").innerHTML = lat;
+            document.getElementById("longvalue").innerHTML = lng;
+
+        }
+
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzzmSYKvUz99QBiY0Mc8RI09JF1ZxYJv4&libraries=visualization&callback=initMap" async defer></script>
+
+    <script src="js/script1.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $(".ch").on("click", function () {
+                $(".cr").eq(index0).css("background-color", "transparent");
+                index0 = $(this).index() - 1;
+                $(".cr").eq(index0).css("background-color", "orange");
+                map.setZoom(index0);
+
+            });
+            $(".selectmap").on("click", function () {
+                $(".type").eq(index1).css("background-color", "transparent");
+                index1 = $(this).index() - 1 - 20;
+                $(".type").eq(index1).css("background-color", "orange");
+
+                if (index1 == 0) {
+                    map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+                }
+                else if (index1 == 1) {
+                    map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
+                }
+                else if (index1 == 2) {
+                    map.setMapTypeId(google.maps.MapTypeId.HYBRID);
+                }
+                else if (index1 == 3) {
+                    map.setMapTypeId(google.maps.MapTypeId.TERRAIN);
+                }
+            });
+        });
+
+        function firstOptionInitial() {
+            if (velocitystillrunning) {
+                stopVelocity();
+                
+            }
+            if (firstoptiondraw!= true) {
+              
+                speeddraw = false;
+                heatmapdraw = false;
+                firstoptiondraw = true;
+                secondoptiondraw = false;
+                initMap();
+            }
+            removeAllPreviousElements();
+        }
+        function secondOptionMultiPins() {
+            if (velocitystillrunning) {
+                stopVelocity();
+            }
+            if (secondoptiondraw != true) {
+
+                speeddraw = false;
+                heatmapdraw = false;
+                firstoptiondraw = false;
+                secondoptiondraw = true;
+                pinPointWithInfoWindow();
+
+            }
+            removeAllPreviousElements();
+        }
+        function heatMapCreate() {  // clicking on button num 4
+            if (velocitystillrunning) {
+                stopVelocity();
+            }
+            removeAllPreviousElements();
+            if (heatmapdraw != true) {
+               
+                speeddraw = false;
+                heatmapdraw = true;
+                firstoptiondraw = false;
+                secondoptiondraw = false;
+                heatMapSpace.initHeat();
+                $("#third_section").append('<p id="heatpara"style="margin-right:100%;display:inline;">Heatmap (create/delete)</p>');
+                $("#third_section").append('<button id="overlaycreate" class="btn btn-default" type="button"  onclick="heatMapSpace.createHeatMap();">Create Overlay</button>');
+                $("#third_section").append('<button id="overlaydelete" class="btn btn-default" type="button" onclick="heatMapSpace.deleteHeatMap();">Delete overlay</button>');
+            }
+        }
+        function initializeVelocity() {
+
+            removeAllPreviousElements();
+            if (speeddraw != true) {
+                heatmapdraw = false;
+                speeddraw = true;
+                firstoptiondraw = false;
+                secondoptiondraw = false;
+                initializeVelocityAnimate();
+                $("#third_section").append('<p id="velocitypara"style="margin-right:100%;display:inline;">Marker velocity(create/delete)</p>');
+                $("#third_section").append('<button id="velocitystart"     class="btn btn-default" type="button"  onclick="initializeVelocityAnimate();">Start</button>');
+                $("#third_section").append('<button id="velocitystop"      class="btn btn-default" type="button" onclick="stopVelocity();">Stop</button>');
+                $("#third_section").append('<button id="velocityincrease"  class="btn btn-default" type="button" onclick="increaseSpeed();">Increase speed</button>');
+            }
+        }
+        function removeAllPreviousElements() {
+            if ($("#overlaycreate").length > 0) {
+                $("#overlaycreate").remove();
+
+            }
+            if ($("#overlaydelete").length > 0) {
+                $("#overlaydelete").remove();
+            }
+            if ($("#heatpara").length > 0) {
+                $("#heatpara").remove();
+            }
+            if ($("#velocitystop").length > 0) {
+                $("#velocitystop").remove();
+            }
+            if ($("#velocityincrease").length > 0) {
+                $("#velocityincrease").remove();
+            }
+            if ($("#velocitystart").length > 0) {
+                $("#velocitystart").remove();
+            }
+            if ($("#velocitypara").length > 0) {
+                $("#velocitypara").remove();
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="below" class="row section">
+        <p>Settings/info:</p>
+        <div class="col-sm-4 section">
+            <p style="display:inline;">Current zoom level:</p>
+            <p class="number cr">1</p>
+            <p class="number cr">2</p>
+            <p class="number cr">3</p>
+            <p class="number cr">4</p>
+            <p class="number cr">5</p>
+            <p class="number cr">6</p>
+            <p class="number cr">7</p>
+            <p class="number cr">8</p>
+            <p class="number cr">9</p>
+            <p class="number cr">10</p>
+            <p class="number cr">11</p>
+            <p class="number cr">12</p>
+            <p class="number cr">13</p>
+            <p class="number cr">14</p>
+            <p class="number cr">15</p>
+            <p class="number cr">16</p>
+            <p class="number cr">17</p>
+            <p class="number cr">18</p>
+            <p></p>
+            <p style="display:inline;">Current map type:</p>
+            <p class="number type">ROADMAP</p>
+            <p class="number type">SATELITE</p>
+            <p class="number type">HYBRID</p>
+            <p class="number type">TERRAIN</p>
+            <p></p>
+            <p>Coordinates:</p>
+            <p style="display:inline;">Lat:</p>
+            <p style="display:inline;">Long:</p>
+            <p id="latvalue" style="display:inline;"></p>
+            <p id="longvalue" style="display:inline;"></p>
+        </div>
+        <div class="col-sm-4 section">
+            <p style="display:inline;">Choose zoom level:</p>
+            <p class="number ch">1</p>
+            <p class="number ch">2</p>
+            <p class="number ch">3</p>
+            <p class="number ch">4</p>
+            <p class="number ch">5</p>
+            <p class="number ch">6</p>
+            <p class="number ch">7</p>
+            <p class="number ch">8</p>
+            <p class="number ch">9</p>
+            <p class="number ch">10</p>
+            <p class="number ch">11</p>
+            <p class="number ch">12</p>
+            <p class="number ch">13</p>
+            <p class="number ch">14</p>
+            <p class="number ch">15</p>
+            <p class="number ch">16</p>
+            <p class="number ch">17</p>
+            <p class="number ch">18</p>
+            <p></p>
+            <p style="display:inline;">Choose type of map:</p>
+            <p class="selectmap">ROADMAP</p>
+            <p class="selectmap">SATELITE</p>
+            <p class="selectmap">HYBRID</p>
+            <p class="selectmap">TERRAIN</p>
+            <p></p>
+            <p>Choose coordinates link:</p>
+            <a style="display:inline;" href="http://www.latlong.net" target="_blank">LATLONG</a>
+        </div>
+
+        <div id="third_section" class="col-sm-4 section">
+            <p style="margin-left:-10px;display:inline;">Current option:</p>
+            <p style="display:inline;"></p>
+        </div>
+    </div>
+    <div id="button_section">
+        <button class="btn btn-default" type="button" onclick="firstOptionInitial();">Original (blank map)</button>
+        <button class="btn btn-default" type="button" onclick="secondOptionMultiPins();">Pinpoints with infowindow</button>
+        <button class="btn btn-default" type="button" onclick="initializeVelocity();">Pinpoint moving (adjust speed)</button>
+        <button class="btn btn-default" type="button" onclick="heatMapCreate();">Show heatmap (with delete)</button>
+        <button class="btn btn-default" type="button" data-sort-by="original-order">Layer geometry </button>
+        <button class="btn btn-default" type="button" data-sort-by="original-order">Drag & Drop marker</button>
+        <button class="btn btn-default" type="button" data-sort-by="original-order">Polylines on click</button>
+        <button class="btn btn-default" type="button" data-sort-by="original-order">Marking area with shape</button>
+        <!--<button class="btn btn-default" type="button" data-sort-by="original-order">Original</button>
+        <button class="btn btn-default" type="button" data-sort-by="original-order">Original</button>
+        <button class="btn btn-default" type="button" data-sort-by="original-order">Original</button>
+        <button class="btn btn-default" type="button" data-sort-by="original-order">Original</button>
+        <button class="btn btn-default" type="button" data-sort-by="original-order">Original</button>
+        <button class="btn btn-default" type="button" data-sort-by="original-order">Original</button>
+        <button class="btn btn-default" type="button" data-sort-by="original-order">Original</button>
+        <button class="btn btn-default" type="button" data-sort-by="original-order">Original</button>
+        <button class="btn btn-default" type="button" data-sort-by="original-order">Original</button>
+        <button class="btn btn-default" type="button" data-sort-by="original-order">Original</button>
+        <button class="btn btn-default" type="button" data-sort-by="original-order">Original</button>
+        <button class="btn btn-default" type="button" data-sort-by="original-order">Original</button>
+        http://jsfiddle.net/vasile/BKvcX/6/-->
+    </div>
+</body>
+</html>
